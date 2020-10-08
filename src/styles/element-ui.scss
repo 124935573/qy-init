@@ -1,0 +1,44 @@
+// cover some element-ui styles
+
+
+// 表单字体大小重置
+.el-form-item__label,.el-form-item__content{
+  font-size: 12px !important;
+}
+
+.my-el-autocomplete{
+  width: 100%;
+}
+
+// 下拉框带搜索按钮样式
+.my-select-search{
+  position: relative;
+  .my-icon-search{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    line-height: 28px;
+    width: 35px;
+    color: #C0C4CC;
+    text-align: center;
+    cursor: default;
+  }
+  .el-select{
+    width: 100%;
+    .el-input__suffix{
+      display: none;
+    }
+  }
+}
+.el-tabs__nav-wrap::after{
+  height: 1px !important;
+}
+
+.perviewImg{
+  .el-dialog .el-dialog__header{
+    border-bottom: 0;
+    height: 15px;
+  }
+}
