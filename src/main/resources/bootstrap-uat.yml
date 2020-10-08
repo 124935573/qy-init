@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: help-center-front
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: uat
+      uri: http://qupconfig.quanyou.com.cn/
+      failFast: true
+    nacos:
+      discovery:
+        server-addr: nacos.ituatt.quanyou.com.cn:80
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    root: info
+    com.quanyou.qmp.mapper: debug

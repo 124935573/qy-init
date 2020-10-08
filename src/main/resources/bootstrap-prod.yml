@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: help-center-front
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: prod
+      uri: http://qupconfig.quanyou.com.cn/
+      failFast: true
+    nacos:
+      discovery:
+        server-addr: nacos.quanyou.com.cn
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    root: warn
+    com.quanyou.qmp.mapper: warn
